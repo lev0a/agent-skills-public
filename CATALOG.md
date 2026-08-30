@@ -1,30 +1,25 @@
 # Skill Catalog
 
-One folder per shared skill; bundled plugins retain their upstream directory structure. Harness categories point to the same packages; they do not create copies.
+A directory of the skills and plugins I use. Browse a snapshot to inspect its contents; follow the original source for downloads, installation instructions, and the latest updates. Recorded snapshots are not automatically synchronized with upstream.
 
 ## By harness
 
-These are intended destinations for the shared collection, not a claim that every package has passed a test in every cloud environment. Skills still require the tools and integrations named in their instructions.
+Shared skills appear once; harness-specific plugins have their own category. This is a showcase of the recorded setup, not a compatibility matrix or a live inventory of every machine.
 
-| Harness | Which collection | Notes |
+| Category | Browse | Notes |
 | --- | --- | --- |
-| Codex | Shared collection below | Keep native and managed plugin skills separate. Validate discovery in the actual cloud environment. |
-| Claude Code | Shared collection below | Use the harness-supported skill location; availability depends on the runtime. |
-| Cursor | Shared collection below and [pstack](#cursor-plugins) | Remote/cloud sessions need skills in their own environment; local installations are not automatically transferred. |
-| Pi | Shared collection below | Selected from the preferred Pi Wayfinder setup; Pi runtime helpers remain outside this repo. |
-| Devin | Shared collection below | Supports discovery from connected skill repositories; verify availability in a real task. |
-
-The shared collection is the starting point; the table is not an inventory of every skill installed on every machine.
+| Shared skills | [Custom skills](#my-custom-skills) and [skills from others](#skills-from-others) | Standalone skill snapshots, originally selected from my Pi Wayfinder setup. |
+| Cursor | [pstack](#cursor-plugins) | Plugin snapshot with its upstream structure preserved. |
 
 ## Cursor plugins
 
-| Plugin | Contents | Credit and source |
+| Browse snapshot | What it does | Original source / latest |
 | --- | --- | --- |
-| [pstack](plugins/cursor/pstack/) | Upstream plugin: skills, agents, playbooks, scripts, documentation, images, and automation pack. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
+| [pstack](plugins/cursor/pstack/) | Coordinate engineering tasks through skills, playbooks, verification, and model delegation. Includes its scripts, documentation, agents, and automation pack. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
 
 pstack comes from [`cursor/plugins` commit `68836ddaf5697224520f1847d90cdb90ca8babaa`](https://github.com/cursor/plugins/tree/68836ddaf5697224520f1847d90cdb90ca8babaa/pstack), version 0.14.5. Its `.gitignore` is excluded at the repository owner's request; all 156 remaining files and their Git file modes are unchanged, including the [MIT license](plugins/cursor/pstack/LICENSE). The snapshot contains 45 plugin skills and three additional skills in the automation pack.
 
-For installation and dependencies, use the preserved [upstream README](plugins/cursor/pstack/README.md) and [setup guide](plugins/cursor/pstack/docs/guide/01-setup.md). Cursor compatibility is the upstream target; other harnesses have not been validated. Same-name skills in this plugin remain separate from the shared collection. Keep the complete plugin together rather than merging its skills into existing folders.
+Inspect the recorded [README](plugins/cursor/pstack/README.md), [skills](plugins/cursor/pstack/skills/), and [setup guide](plugins/cursor/pstack/docs/guide/01-setup.md) here. For the current version and installation instructions, go to [pstack's original repository](https://github.com/cursor/plugins/tree/main/pstack). Its same-name skills remain separate from the standalone snapshots because they belong to a different upstream package.
 
 The snapshot retains upstream behavior, including its autonomy rules and transcript-reading workflows. Inclusion here does not activate it or grant permission to send messages, change accounts, or start automations; the user's instructions and environment permissions still govern use.
 
@@ -32,14 +27,14 @@ The snapshot retains upstream behavior, including its autonomy rules and transcr
 
 Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tracking conventions.
 
-| Skill | Purpose | Origin |
+| Browse snapshot | Purpose | Origin |
 | --- | --- | --- |
 | [`linear-cockpit`](.agents/skills/linear-cockpit/) | Maintain Carl's human-readable Linear project cockpit. | Custom · Carl / lev0a |
 | [`setup-project-tracking`](.agents/skills/setup-project-tracking/) | Set up or retrofit approved project tracking. | Custom · Carl / lev0a |
 
 ## Skills from others
 
-| Skill | Purpose | Credit and source |
+| Browse snapshot | Purpose | Original source / latest |
 | --- | --- | --- |
 | [`ask-matt`](.agents/skills/ask-matt/) | Choose an appropriate skill or workflow. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`code-review`](.agents/skills/code-review/) | Review a change against repository standards and its specification. | [Matt Pocock](https://github.com/mattpocock/skills) |
@@ -72,17 +67,17 @@ Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tr
 | [`wizard`](.agents/skills/wizard/) | Generate an interactive wizard for steps only a human can perform. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`writing-for-agents`](.agents/skills/writing-for-agents/) | Write or edit skills and agent instruction files. | [Matt Pocock](https://github.com/mattpocock/skills) |
 
-## Credits
+## Attribution and snapshot notes
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills) — 24 skills; `wayfinder` includes a local adaptation for direct research delegation.
 - [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail) — six skills.
 - [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) — one Cursor plugin snapshot, with only `.gitignore` excluded.
 - [Carl / lev0a](https://github.com/lev0a) — `linear-cockpit` and `setup-project-tracking`.
 
-The shared collection's upstream license notices are in [LICENSES/](LICENSES/); pstack's notice remains in its [plugin directory](plugins/cursor/pstack/LICENSE). Include the relevant notice when copying an individual third-party skill. The license for the two custom skills is pending selection.
+The shared snapshots' upstream license notices are in [LICENSES/](LICENSES/); pstack's notice remains in its [plugin directory](plugins/cursor/pstack/LICENSE). The license for the two custom skills is pending selection.
 
-## Outside this library
+## Scope
 
-Except for the explicitly listed plugin snapshots, native/system/plugin-managed packages are not vendored. Runtime-only helpers outside those snapshots, credentials, local settings, and machine-specific inventories remain excluded. There is no requirement to import every skill found in an earlier audit.
+Entries reflect the skills selected for this showcase, not every package found in an earlier audit. Credentials, local account settings, personal session logs, and machine-specific inventories remain excluded.
 
-The library contains 32 shared skill packages and one pstack plugin snapshot.
+The directory currently shows 32 standalone skill snapshots and one pstack plugin snapshot.

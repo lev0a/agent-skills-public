@@ -1,46 +1,35 @@
 # Agent Skills
 
-A personal library of reusable agent skills, with one copy of each package and clear credits.
+A browsable directory of the agent skills and plugins I use, with snapshots of their contents and credit to their creators.
 
 ## Browse
 
-[CATALOG.md](CATALOG.md) groups the library by harness and distinguishes my custom skills, upstream skills, and adaptations.
+[Browse the catalog](CATALOG.md) to see what each skill does, inspect its recorded snapshot, and follow its original source. Entries distinguish my custom skills, skills by other people, and adaptations.
 
-```text
-.agents/skills/<name>/    # One complete package per skill
-plugins/cursor/pstack/   # Upstream plugin snapshot; see catalog for exclusions
-CATALOG.md               # Harness categories, purpose, and credits
-LICENSES/                # Third-party copyright and license notices
-```
+- [My custom skills](CATALOG.md#my-custom-skills)
+- [Skills from others](CATALOG.md#skills-from-others)
+- [Cursor plugins](CATALOG.md#cursor-plugins)
 
-A skill shared by several harnesses stays in one folder. Selected plugins are preserved as upstream snapshots under their harness directory, with any exclusions recorded in the catalog; this library does not manage their updates.
+## Snapshots and original sources
 
-## Give a cloud agent the library
+The files here show the versions recorded in my setup. They make the directory inspectable; they are not maintained as a download or update channel for other people's skills. Snapshots can lag behind upstream.
 
-Start with a request like:
+For downloads, installation instructions, and the latest updates, follow each entry's original source:
 
-> Download https://github.com/lev0a/agent-skills-public into this cloud environment. Read its catalog and install the skills needed for this task using your harness's supported skill location. Keep complete skill folders and their relevant license notices. Check for existing same-name skills; reuse identical copies and ask before replacing different ones. Do not run bundled scripts during installation, change my project, or commit installed copies. Report the revision, installed names, and anything you cannot load. Then demonstrate wait-what with a harmless explanation.
+- [Matt Pocock's skills](https://github.com/mattpocock/skills)
+- [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail)
+- [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack)
 
-A public repository removes the need for GitHub credentials to download it. It does not automatically install skills into every cloud session. Use the environment's existing setup step when repeat installation is useful; no custom manager or synchronization service is required.
+Shared skills are recorded once in `.agents/skills/`; plugin snapshots retain their structure under `plugins/<harness>/`. The catalog records adaptations and exclusions. There is no installer or automatic synchronization.
 
-For the bundled pstack snapshot, read its [catalog entry](CATALOG.md#cursor-plugins) before installation. Keep the plugin directory intact and follow its upstream setup instructions for the target environment. Downloading the snapshot does not activate its skills or automations.
+## Attribution
 
-The skill format is shared, but discovery and available tools vary by harness. [Codex documents local skill locations](https://learn.chatgpt.com/docs/build-skills); [Cursor distinguishes local and cloud discovery](https://cursor.com/docs/skills); [Devin documents discovery across connected repositories](https://docs.devin.ai/product-guides/skills). A successful download is not proof that the agent loaded a skill. Cloud use must be tested in the actual environment.
+Original creators and source repositories are linked in the catalog. Upstream license notices remain in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE).
 
-## Sources and licenses
-
-- 24 packages originate from [Matt Pocock's skills](https://github.com/mattpocock/skills); retain [his MIT notice](LICENSES/mattpocock.txt).
-- Six packages originate from [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail); retain [its MIT notice](LICENSES/ponytail.txt).
-- The pstack plugin originates from [Lauren Tan / poteto in cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack); its [MIT notice](plugins/cursor/pstack/LICENSE) remains inside the snapshot.
-- Two packages are custom work for this collection: `linear-cockpit` and `setup-project-tracking`. No additional reuse license is granted for these custom skills yet.
-- `wayfinder` is adapted from Matt Pocock's work, not an original custom skill. See the catalog for the recorded change.
-
-When copying individual third-party packages, include the applicable notice in each installed or redistributed package. Credits alone do not replace the license notice.
+My custom skills are `linear-cockpit` and `setup-project-tracking`. They contain personal tracking conventions; no additional public reuse license has been selected for them.
 
 ## Keep private material out
 
 No credentials, account configuration, local environment files, personal session logs, or machine inventories belong here. A skill may describe using an authenticated service; its credentials remain in that environment.
 
 Before publishing or adding skills, check the complete folders and Git history for secrets and personal/private context. Review scripts without executing them. A clean pattern scan is useful evidence, not a guarantee of safety.
-
-The two custom tracking skills contain personal ownership and workflow conventions. They are provided as personal workflows, not generic organization policies.
