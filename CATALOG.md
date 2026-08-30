@@ -1,36 +1,36 @@
-# Skill Catalog
+# Skill catalog
 
-A directory of the skills and plugins I use. Browse a snapshot to inspect its contents; follow the original source for downloads, installation instructions, and the latest updates. Recorded snapshots are not automatically synchronized with upstream.
+These are the skills and plugins I use. The snapshot links open the copies kept here. For downloads and updates, follow the original source links. Snapshots don't update automatically.
 
 ## By harness
 
-Shared skills appear once; harness-specific plugins have their own category. This is a showcase of the recorded setup, not a compatibility matrix or a live inventory of every machine.
+I list shared skills once and group plugins by the agent they're built for.
 
 | Category | Browse | Notes |
 | --- | --- | --- |
-| Shared skills | [Custom skills](#my-custom-skills) and [skills from others](#skills-from-others) | Standalone skill snapshots, originally selected from my Pi Wayfinder setup. |
-| Cursor | [pstack](#cursor-plugins) | Plugin snapshot with its upstream structure preserved. |
+| Shared skills | [Custom skills](#my-custom-skills) and [skills from others](#skills-from-others) | Skills originally selected from my Pi Wayfinder setup. |
+| Cursor | [pstack](#cursor-plugins) | Plugin snapshot in its original folder structure. |
 
 ## Cursor plugins
 
 | Browse snapshot | What it does | Original source / latest |
 | --- | --- | --- |
-| [pstack](plugins/cursor/pstack/) | Coordinate engineering tasks through skills, playbooks, verification, and model delegation. Includes its scripts, documentation, agents, and automation pack. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
+| [pstack](plugins/cursor/pstack/) | Choose a workflow for a coding task, delegate work to agents, and verify the result. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
 
-pstack comes from [`cursor/plugins` commit `68836ddaf5697224520f1847d90cdb90ca8babaa`](https://github.com/cursor/plugins/tree/68836ddaf5697224520f1847d90cdb90ca8babaa/pstack), version 0.14.5. Its `.gitignore` is excluded at the repository owner's request; all 156 remaining files and their Git file modes are unchanged, including the [MIT license](plugins/cursor/pstack/LICENSE). The snapshot contains 45 plugin skills and three additional skills in the automation pack.
+This is pstack version 0.14.5 from [`cursor/plugins` commit `68836ddaf5697224520f1847d90cdb90ca8babaa`](https://github.com/cursor/plugins/tree/68836ddaf5697224520f1847d90cdb90ca8babaa/pstack). I removed `.gitignore`. The other 156 files and their Git file modes are unchanged, including the [MIT license](plugins/cursor/pstack/LICENSE).
 
-Inspect the recorded [README](plugins/cursor/pstack/README.md), [skills](plugins/cursor/pstack/skills/), and [setup guide](plugins/cursor/pstack/docs/guide/01-setup.md) here. For the current version and installation instructions, go to [pstack's original repository](https://github.com/cursor/plugins/tree/main/pstack). Its same-name skills remain separate from the standalone snapshots because they belong to a different upstream package.
+The snapshot includes 45 plugin skills and three automation skills, along with scripts, agents, documentation, and images. Read its [README](plugins/cursor/pstack/README.md), [skills](plugins/cursor/pstack/skills/), or [setup guide](plugins/cursor/pstack/docs/guide/01-setup.md) here. Get the latest version from [pstack's original repository](https://github.com/cursor/plugins/tree/main/pstack).
 
-The snapshot retains upstream behavior, including its autonomy rules and transcript-reading workflows. Inclusion here does not activate it or grant permission to send messages, change accounts, or start automations; the user's instructions and environment permissions still govern use.
+Some pstack skills share names with the standalone skills below. They stay in their own package. Pstack's instructions include autonomous work and reading chat transcripts. Keeping a copy here doesn't activate those workflows or authorize messages, account changes, or automations. User instructions and environment permissions still apply.
 
 ## My custom skills
 
-Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tracking conventions.
+Custom skills by [Carl / lev0a](https://github.com/lev0a).
 
 | Browse snapshot | Purpose | Origin |
 | --- | --- | --- |
 | [`linear-cockpit`](.agents/skills/linear-cockpit/) | Maintain Carl's human-readable Linear project cockpit. | Custom · Carl / lev0a |
-| [`setup-project-tracking`](.agents/skills/setup-project-tracking/) | Set up or retrofit approved project tracking. | Custom · Carl / lev0a |
+| [`setup-project-tracking`](.agents/skills/setup-project-tracking/) | Set up or update approved project tracking. | Custom · Carl / lev0a |
 
 ## Skills from others
 
@@ -38,15 +38,15 @@ Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tr
 | --- | --- | --- |
 | [`ask-matt`](.agents/skills/ask-matt/) | Choose an appropriate skill or workflow. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`code-review`](.agents/skills/code-review/) | Review a change against repository standards and its specification. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`codebase-design`](.agents/skills/codebase-design/) | Design deep modules and useful seams. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`diagnosing-bugs`](.agents/skills/diagnosing-bugs/) | Diagnose hard bugs and performance regressions. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`domain-modeling`](.agents/skills/domain-modeling/) | Sharpen terminology, context documents, and ADRs. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`grill-me`](.agents/skills/grill-me/) | Relentlessly interview the user about a plan or design. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`grill-with-docs`](.agents/skills/grill-with-docs/) | Grill while producing ADR and glossary documentation. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`codebase-design`](.agents/skills/codebase-design/) | Organize code into modules with simple interfaces. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`diagnosing-bugs`](.agents/skills/diagnosing-bugs/) | Find the causes of bugs and slowdowns. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`domain-modeling`](.agents/skills/domain-modeling/) | Define domain terms and document design decisions. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`grill-me`](.agents/skills/grill-me/) | Ask detailed questions about a plan or design. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`grill-with-docs`](.agents/skills/grill-with-docs/) | Question a plan and record decisions and definitions. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`grilling`](.agents/skills/grilling/) | Stress-test a plan, decision, or idea. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`handoff`](.agents/skills/handoff/) | Compact a conversation for another agent. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`handoff`](.agents/skills/handoff/) | Summarize a conversation for another agent. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`implement`](.agents/skills/implement/) | Implement work from a specification or tickets. | [Matt Pocock](https://github.com/mattpocock/skills) |
-| [`improve-codebase-architecture`](.agents/skills/improve-codebase-architecture/) | Find and review opportunities to deepen modules. | [Matt Pocock](https://github.com/mattpocock/skills) |
+| [`improve-codebase-architecture`](.agents/skills/improve-codebase-architecture/) | Find places to hide complexity behind simpler module interfaces. | [Matt Pocock](https://github.com/mattpocock/skills) |
 | [`ponytail`](.agents/skills/ponytail/) | Prefer the smallest solution that actually works. | [DietrichGebert / Ponytail](https://github.com/DietrichGebert/ponytail) |
 | [`ponytail-audit`](.agents/skills/ponytail-audit/) | Audit a repository for over-engineering. | [DietrichGebert / Ponytail](https://github.com/DietrichGebert/ponytail) |
 | [`ponytail-debt`](.agents/skills/ponytail-debt/) | List deliberate shortcuts recorded in `ponytail:` comments. | [DietrichGebert / Ponytail](https://github.com/DietrichGebert/ponytail) |
@@ -69,15 +69,15 @@ Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tr
 
 ## Attribution and snapshot notes
 
-- [Matt Pocock's skills](https://github.com/mattpocock/skills) — 24 skills; `wayfinder` includes a local adaptation for direct research delegation.
-- [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail) — six skills.
-- [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) — one Cursor plugin snapshot, with only `.gitignore` excluded.
-- [Carl / lev0a](https://github.com/lev0a) — `linear-cockpit` and `setup-project-tracking`.
+- 24 skills come from [Matt Pocock](https://github.com/mattpocock/skills). I adapted `wayfinder` to delegate research directly to child agents.
+- Six skills come from [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail).
+- Pstack comes from [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack). Only `.gitignore` is omitted.
+- I made `linear-cockpit` and `setup-project-tracking`.
 
-The shared snapshots' upstream license notices are in [LICENSES/](LICENSES/); pstack's notice remains in its [plugin directory](plugins/cursor/pstack/LICENSE). The license for the two custom skills is pending selection.
+License notices are in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE). I haven't chosen a public reuse license for my two custom skills yet.
 
 ## Scope
 
-Entries reflect the skills selected for this showcase, not every package found in an earlier audit. Credentials, local account settings, personal session logs, and machine-specific inventories remain excluded.
+I keep credentials, account settings, personal session logs, and machine inventories out of this directory.
 
 The directory currently shows 32 standalone skill snapshots and one pstack plugin snapshot.

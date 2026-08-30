@@ -1,10 +1,10 @@
-# Agent Skills
+# Agent skills
 
-A browsable directory of the agent skills and plugins I use, with snapshots of their contents and credit to their creators.
+These are the agent skills and plugins I use. I keep snapshots here so you can read what they do. Each entry links to its creator's original source.
 
 ## Browse
 
-[Browse the catalog](CATALOG.md) to see what each skill does, inspect its recorded snapshot, and follow its original source. Entries distinguish my custom skills, skills by other people, and adaptations.
+[Browse the catalog](CATALOG.md) for descriptions, snapshots, and source links. I've marked which skills I made and which I've adapted.
 
 - [My custom skills](CATALOG.md#my-custom-skills)
 - [Skills from others](CATALOG.md#skills-from-others)
@@ -12,24 +12,24 @@ A browsable directory of the agent skills and plugins I use, with snapshots of t
 
 ## Snapshots and original sources
 
-The files here show the versions recorded in my setup. They make the directory inspectable; they are not maintained as a download or update channel for other people's skills. Snapshots can lag behind upstream.
+The snapshots show the versions I've collected. They don't update automatically.
 
-For downloads, installation instructions, and the latest updates, follow each entry's original source:
+Get the latest version and installation instructions from the original source:
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills)
 - [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail)
 - [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack)
 
-Shared skills are recorded once in `.agents/skills/`; plugin snapshots retain their structure under `plugins/<harness>/`. The catalog records adaptations and exclusions. There is no installer or automatic synchronization.
+Shared skills live in `.agents/skills/`. Plugin snapshots live in `plugins/<harness>/`, with their original folder structure. The catalog notes any changes or omitted files.
 
 ## Attribution
 
-Original creators and source repositories are linked in the catalog. Upstream license notices remain in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE).
+The catalog credits each creator. Their license notices are in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE).
 
-My custom skills are `linear-cockpit` and `setup-project-tracking`. They contain personal tracking conventions; no additional public reuse license has been selected for them.
+I made `linear-cockpit` and `setup-project-tracking` for my own project tracking. I haven't chosen a public reuse license for them yet.
 
 ## Keep private material out
 
-No credentials, account configuration, local environment files, personal session logs, or machine inventories belong here. A skill may describe using an authenticated service; its credentials remain in that environment.
+Keep credentials, account settings, environment files, personal session logs, and machine inventories out of this repo. Skills that use authenticated services should leave credentials in the environment where they run.
 
-Before publishing or adding skills, check the complete folders and Git history for secrets and personal/private context. Review scripts without executing them. A clean pattern scan is useful evidence, not a guarantee of safety.
+Before adding a snapshot, check every file and the Git history for secrets or private information. Read scripts without running them. A secret scan helps, but it can miss things.
