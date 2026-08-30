@@ -33,6 +33,6 @@ Use `Done` only when current evidence verifies the outcome. Preserve uncertainty
 
 Search exact project and issue names before creating anything. Reuse exact matches and preserve unrelated metadata. Treat partial prior setup as state to repair, not a reason to restart.
 
-Present the crosswalk and unresolved gaps before writes. Carl approves the imported batch and any shared vocabulary changes.
+Present the crosswalk and unresolved gaps before writes. Carlos approves the imported batch and any shared vocabulary changes.
 
-Completion criterion: every meaningful known work item has one proposed live state, and every unresolved gap is visible to Carl.
+Completion criterion: every meaningful known work item has one proposed live state, and every unresolved gap is visible to Carlos.

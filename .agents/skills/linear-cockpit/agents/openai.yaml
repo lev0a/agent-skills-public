@@ -1,4 +1,4 @@
 interface:
   display_name: "Linear Cockpit"
-  short_description: "Keep Linear readable and current for Carl"
-  default_prompt: "Use $linear-cockpit to translate this work into a clear, current Linear update for Carl."
+  short_description: "Keep Linear readable and current for Carlos"
+  default_prompt: "Use $linear-cockpit to translate this work into a clear, current Linear update for Carlos."

@@ -1,18 +1,18 @@
 ---
 name: linear-cockpit
-description: Keep Carl's Linear workspace readable, current, and useful as a phone-facing project cockpit while GitHub and project files remain canonical for technical truth. Use when an agent reads, creates, translates, starts, delegates, hands off, blocks, prioritizes, reviews, completes, or summarizes Linear-linked work; coordinates local, Linear-native, or direct-cloud AI execution; or when Carl asks for a plain-English Linear project update or freshness audit.
+description: Keep Carlos's Linear workspace readable, current, and useful as a phone-facing project cockpit while GitHub and project files remain canonical for technical truth. Use when an agent reads, creates, translates, starts, delegates, hands off, blocks, prioritizes, reviews, completes, or summarizes Linear-linked work; coordinates local, Linear-native, or direct-cloud AI execution; or when Carlos asks for a plain-English Linear project update or freshness audit.
 ---
 
 # Linear Cockpit
 
-Use Linear to explain what work means to Carl. Keep technical commands, implementation evidence, exhaustive acceptance details, and version history in GitHub or the linked project files.
+Use Linear to explain what work means to Carlos. Keep technical commands, implementation evidence, exhaustive acceptance details, and version history in GitHub or the linked project files.
 
 ## Operating boundary
 
 - Treat Linear as the human-readable project cockpit, not another vault and not the canonical technical record.
 - Read the live Linear issue or project before proposing or applying a change.
 - Verify material technical claims against the linked GitHub issue, project file, or fresh agent evidence. Never update Linear from memory alone.
-- Keep Carl as the human owner. For new work, assign Carl unless he directs otherwise. Preserve an existing assignee unless the authorized task requires a change.
+- Keep Carlos as the human owner. For new work, assign Carlos unless he directs otherwise. Preserve an existing assignee unless the authorized task requires a change.
 - Let the lead agent own the Linear narrative. Have subagents report to the lead unless the lead explicitly delegates the entire Linear issue, including its human-facing updates.
 - Never treat project membership, Todo, `ready-for-agent`, or an agent label as permission to implement, deploy, spend, access credentials, contact people, or perform live effects.
 
@@ -22,7 +22,7 @@ Choose the lane that matches how the work is actually running. Do not make the w
 
 ### Local or connector agent
 
-- Keep Carl as assignee and leave the native delegate empty.
+- Keep Carlos as assignee and leave the native delegate empty.
 - Use the one current-agent label while work is active.
 - Have the lead agent write meaningful starts, handoffs, gates, blockers, and verified results to Linear.
 - Keep local thread details and subagent chatter out of Linear unless they change ownership, risk, the next step, or the outcome.
@@ -30,19 +30,19 @@ Choose the lane that matches how the work is actually running. Do not make the w
 ### Native Linear agent
 
 - Only enter this lane when native delegation is available and the work itself is authorized.
-- Keep Carl as assignee and use the native agent as delegate.
-- Also use the one current-agent label so Carl can filter by executor on phone or desktop.
+- Keep Carlos as assignee and use the native agent as delegate.
+- Also use the one current-agent label so Carlos can filter by executor on phone or desktop.
 - Treat session creation, a delegate badge, or `Waiting` / `Thinking` text as launch attempts, not proof that a cloud task started.
 - Verify that the native session reached a real running task before saying the agent is working. Record the task link when available.
 - Use the native agent chat as execution activity; keep GitHub or the project files canonical for detailed technical evidence.
 
 ### Direct cloud fallback
 
-- Keep Carl as assignee and leave the native Linear delegate empty.
+- Keep Carlos as assignee and leave the native Linear delegate empty.
 - Use the one current-agent label while the cloud task is active.
 - Link the direct cloud task in one compact start or handoff comment.
 - Make the lead agent responsible for translating meaningful cloud progress, blockers, and the verified result back into Linear. Do not imply that direct cloud activity updates Linear automatically.
-- Treat the cloud task as execution authority only for the work Carl actually authorized. It does not expand permission for live access, credentials, spending, delivery, deployment, or other outside effects.
+- Treat the cloud task as execution authority only for the work Carlos actually authorized. It does not expand permission for live access, credentials, spending, delivery, deployment, or other outside effects.
 
 Across all lanes, show only the lead executor as current. Preserve meaningful subagents and model history in handoff or completion comments instead of creating identities, labels, or duplicate issues for them.
 
@@ -63,16 +63,16 @@ When a native delegate does not launch:
 
 1. Check whether a real cloud task was created before retrying.
 2. If task creation is uncertain, do not retry; record the uncertainty and reconcile first.
-3. Retry at most once, only when Carl or the authorized workflow explicitly allows it and the retry has a concrete reason.
+3. Retry at most once, only when Carlos or the authorized workflow explicitly allows it and the retry has a concrete reason.
 4. If the bounded attempt fails, clear the failed delegate and current-agent label because no agent is working.
-5. Add `blocked` only when the integration failure prevents progress. Add `ready-for-human` only when Carl must take a specific action or make a decision.
+5. Add `blocked` only when the integration failure prevents progress. Add `ready-for-human` only when Carlos must take a specific action or make a decision.
 6. Record the visible failure, whether a cloud task existed, what was ruled out, and the next targeted step. Do not keep retrying while waiting for support or an external-state change.
 
 ## Write authority
 
 Allow a lead agent to update an existing issue autonomously when it represents already-authorized, Linear-linked work the lead owns. This includes status, current-agent label, readable progress, blockers, handoffs, priority with rationale, and verified completion.
 
-Require Carl's approval before:
+Require Carlos's approval before:
 
 - creating a Linear project;
 - creating or importing a batch of issues;
@@ -80,7 +80,7 @@ Require Carl's approval before:
 - reorganizing milestones across an existing project;
 - canceling meaningful work.
 
-Propose those changes without applying them when approval is absent. Creating one issue is allowed only when Carl explicitly requests it or an approved plan clearly requires that exact issue.
+Propose those changes without applying them when approval is absent. Creating one issue is allowed only when Carlos explicitly requests it or an approved plan clearly requires that exact issue.
 
 ## Read-write-verify workflow
 
@@ -98,12 +98,12 @@ Propose those changes without applying them when approval is absent. Creating on
 Make every issue answer:
 
 1. What are we trying to accomplish?
-2. Why does it matter to Carl?
+2. Why does it matter to Carlos?
 3. What is happening now?
 4. Who assigned, owns, and is executing the work?
-5. Is anything blocked or waiting on Carl?
+5. Is anything blocked or waiting on Carlos?
 6. What happens next?
-7. How can Carl recognize success?
+7. How can Carlos recognize success?
 
 Prefer everyday language. Explain unavoidable technical terms on first use. Link to technical evidence instead of copying commands, schemas, commit lists, test matrices, raw logs, or exhaustive failure cases into Linear.
 
@@ -113,10 +113,10 @@ Use the existing Levoa statuses:
 
 - **Backlog:** Retain the work, but it is not ready or chosen next.
 - **Todo:** The work is ready to begin.
-- **In Progress:** Carl or a lead agent has actively taken responsibility.
+- **In Progress:** Carlos or a lead agent has actively taken responsibility.
 - **In Review:** The work appears complete, but its result or evidence still needs verification.
 - **Done:** Verify the promised outcome in the technical source before using this status.
-- **Canceled:** Intentionally stop or supersede the work. Require Carl's approval for meaningful cancellation.
+- **Canceled:** Intentionally stop or supersede the work. Require Carlos's approval for meaningful cancellation.
 - **Duplicate:** Another issue represents the same work; link or name it.
 
 Do not create lifecycle labels that duplicate these statuses.
@@ -125,7 +125,7 @@ Do not create lifecycle labels that duplicate these statuses.
 
 Preserve existing labels and use them as follows:
 
-- `ready-for-human`: Carl must take a specific action or make a decision.
+- `ready-for-human`: Carlos must take a specific action or make a decision.
 - `ready-for-agent`: The issue is fully specified, unblocked, and available for an agent. Remove it when an agent starts.
 - `needs-info`: Missing information prevents progress.
 - `needs-triage`: The issue has not been evaluated and routed.
@@ -150,7 +150,7 @@ When another Linear issue causes a block, add a native blocking relation as well
 
 Use best judgment and these meanings:
 
-- **Urgent:** Carl should interrupt other work.
+- **Urgent:** Carlos should interrupt other work.
 - **High:** One of the next important outcomes.
 - **Medium:** Important, but not next.
 - **Low:** Worth retaining with little current pressure.
@@ -173,7 +173,7 @@ One or two sentences describing where this stands now.
 
 ## Why this matters
 
-What this gives Carl in practical terms.
+What this gives Carlos in practical terms.
 
 ## What is happening
 
@@ -183,7 +183,7 @@ A plain-English summary of the work, without engineering instructions.
 
 - Three to seven understandable completion checks.
 
-## Needs from Carl
+## Needs from Carlos
 
 The exact action or decision, or `Nothing right now.`
 
@@ -209,7 +209,7 @@ Do not maintain manual issue counts in permanent descriptions when Linear can ca
 
 ## Project structure
 
-Create a project only for work with independently meaningful issues, observable phases, several sessions, or project-level decisions and risks. Use milestones only when their names communicate meaningful progress to Carl.
+Create a project only for work with independently meaningful issues, observable phases, several sessions, or project-level decisions and risks. Use milestones only when their names communicate meaningful progress to Carlos.
 
 Use the project page as the project overview. Avoid a duplicate parent-summary issue unless it represents a genuine deliverable that can independently become Done.
 
@@ -228,7 +228,7 @@ Where the project stands now.
 
 What is actively moving.
 
-## Needs from Carl
+## Needs from Carlos
 
 Decisions or actions, or `Nothing right now.`
 
@@ -281,24 +281,24 @@ On completion, remove the current-agent label but preserve the final execution l
 For a human gate:
 
 - add `ready-for-human`;
-- leave one concise comment that mentions Carl using his current Linear display name when the writing agent has a distinct Linear identity;
-- when the Linear connection writes as Carl, do not claim that a self-mention created an Inbox notification; state the request in the issue and surface it in the active agent conversation or handoff instead;
-- state the exact question or action Carl needs to address, what waits on it, and how he can answer;
+- leave one concise comment that mentions Carlos using his current Linear display name when the writing agent has a distinct Linear identity;
+- when the Linear connection writes as Carlos, do not claim that a self-mention created an Inbox notification; state the request in the issue and surface it in the active agent conversation or handoff instead;
+- state the exact question or action Carlos needs to address, what waits on it, and how he can answer;
 - keep the underlying work status accurate;
 - do not also add `blocked` unless progress is genuinely prevented.
 
 Use this shape and do not post repeated reminder comments:
 
-> @Carl Monroy - decision needed: <plain-English question or action>. Until then, <what is waiting>. Reply here with <the needed answer>.
+> @Carlos Monroy - decision needed: <plain-English question or action>. Until then, <what is waiting>. Reply here with <the needed answer>.
 
-Treat any Inbox item as a temporary alert, never as proof that Carl saw the request. Keep `ready-for-human` on the issue as the durable state until Carl responds, even if the Inbox notification is read, snoozed, deleted, or never generated. Do not make Inbox cleanup or Inbox zero part of the workflow.
+Treat any Inbox item as a temporary alert, never as proof that Carlos saw the request. Keep `ready-for-human` on the issue as the durable state until Carlos responds, even if the Inbox notification is read, snoozed, deleted, or never generated. Do not make Inbox cleanup or Inbox zero part of the workflow.
 
 For a blocker:
 
 - add `blocked` and remove `ready-for-agent`;
 - name the obstacle, consequence, and unblocking action;
 - add the native blocking relation when another issue is responsible;
-- add `ready-for-human` only when Carl specifically must act;
+- add `ready-for-human` only when Carlos specifically must act;
 - keep In Progress when the lead still owns active resolution; use Backlog only when the work is no longer active or ready.
 
 ## Review and completion
@@ -318,11 +318,11 @@ When evidence is unclear, keep In Progress or In Review, explain the uncertainty
 
 ## Project updates
 
-Post a project update only when Carl requests one or when progress, risk, a human gate, or the next direction changes meaningfully. Include:
+Post a project update only when Carlos requests one or when progress, risk, a human gate, or the next direction changes meaningfully. Include:
 
 - what changed;
 - what is moving now;
-- what needs Carl;
+- what needs Carlos;
 - meaningful risks or blockers;
 - what happens next;
 - on-track, at-risk, or off-track health with a plain-English reason.
@@ -341,4 +341,4 @@ When a lead agent starts, hands off, blocks, or completes Linear-linked work, qu
 - priority and its rationale;
 - next-step information.
 
-Broaden cleanup only when Carl requests it or when preparing a meaningful project update. Do not turn a transition update into an unsolicited workspace reorganization.
+Broaden cleanup only when Carlos requests it or when preparing a meaningful project update. Do not turn a transition update into an unsolicited workspace reorganization.

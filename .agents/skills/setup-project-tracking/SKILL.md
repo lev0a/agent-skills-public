@@ -1,6 +1,6 @@
 ---
 name: setup-project-tracking
-description: Set up or retrofit project tracking when Carl explicitly asks for it. Selects Linear-only or Linear + GitHub from live project context, with Wayfinder as an optional approved overlay. Use for new projects, mid-project migrations, or incomplete tracker setup.
+description: Set up or retrofit project tracking when Carlos explicitly asks for it. Selects Linear-only or Linear + GitHub from live project context, with Wayfinder as an optional approved overlay. Use for new projects, mid-project migrations, or incomplete tracker setup.
 ---
 
 # Set Up Project Tracking
@@ -18,7 +18,7 @@ Determine:
 - Is there an authoritative GitHub repository with Issues enabled?
 - Is tracking partially configured?
 - Where does current project truth live?
-- Does Carl already want Wayfinder?
+- Does Carlos already want Wayfinder?
 
 For an active project, read [references/retrofit.md](references/retrofit.md).
 
@@ -46,7 +46,7 @@ Recommend when an authoritative GitHub repository with Issues enabled exists.
 
 Read [references/github-pairing.md](references/github-pairing.md).
 
-Use Linear-only when no repository exists. Creating a repository is a separate decision that requires Carl's approval.
+Use Linear-only when no repository exists. Creating a repository is a separate decision that requires Carlos's approval.
 
 ## 3. Consider the Wayfinder overlay
 
@@ -54,7 +54,7 @@ Wayfinder is independent of the base mode.
 
 Recommend it only when:
 
-- Carl requests Wayfinder; or
+- Carlos requests Wayfinder; or
 - the destination is clear but the route contains several unresolved decisions that exceed one normal session.
 
 Explain the recommendation. Obtain approval before creating a map or decision tickets.
@@ -75,9 +75,9 @@ Show:
 - authoritative records;
 - unknown history that cannot be reconstructed.
 
-Obtain Carl's approval before creating a Linear project, importing an issue batch, creating GitHub issues, or changing shared labels. Do not repeat questions Carl already answered.
+Obtain Carlos's approval before creating a Linear project, importing an issue batch, creating GitHub issues, or changing shared labels. Do not repeat questions Carlos already answered.
 
-Completion criterion: Carl approved the exact structure and write set.
+Completion criterion: Carlos approved the exact structure and write set.
 
 ## 5. Configure
 

@@ -29,7 +29,7 @@ Search exact titles on both trackers. Reuse one exact match. Stop for reconcilia
 5. Add native parent and blocking relations when the approved project structure requires them.
 6. Re-read both items and verify reciprocal navigation.
 
-Use existing labels where they express the approved meaning. Shared label changes require Carl's approval. Wayfinder labels belong only to an approved Wayfinder overlay.
+Use existing labels where they express the approved meaning. Shared label changes require Carlos's approval. Wayfinder labels belong only to an approved Wayfinder overlay.
 
 ## Work and completion
 

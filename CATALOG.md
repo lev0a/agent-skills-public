@@ -59,12 +59,12 @@ Some pstack skills share names with the standalone skills below. They stay in th
 
 ## My custom skills
 
-Custom skills by [Carl / lev0a](https://github.com/lev0a).
+Custom skills by [Carlos / lev0a](https://github.com/lev0a).
 
 | Browse snapshot | Purpose | Origin |
 | --- | --- | --- |
-| [`linear-cockpit`](.agents/skills/linear-cockpit/) | Maintain Carl's human-readable Linear project cockpit. | Custom · Carl / lev0a |
-| [`setup-project-tracking`](.agents/skills/setup-project-tracking/) | Set up or update approved project tracking. | Custom · Carl / lev0a |
+| [`linear-cockpit`](.agents/skills/linear-cockpit/) | Maintain Carlos's human-readable Linear project cockpit. | Custom · Carlos / lev0a |
+| [`setup-project-tracking`](.agents/skills/setup-project-tracking/) | Set up or update approved project tracking. | Custom · Carlos / lev0a |
 
 ## Skills from others
 
