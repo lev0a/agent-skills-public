@@ -2,16 +2,50 @@
 
 These are the skills and plugins I use. The snapshot links open the copies kept here. For downloads and updates, follow the original source links. Snapshots don't update automatically.
 
-## By harness
+## Browse
 
-I list shared skills once and group plugins by the agent they're built for.
+I list shared skills once. The plugins section shows which harnesses each plugin supports.
 
 | Category | Browse | Notes |
 | --- | --- | --- |
 | Shared skills | [Custom skills](#my-custom-skills) and [skills from others](#skills-from-others) | Skills originally selected from my Pi Wayfinder setup. |
-| Cursor | [pstack](#cursor-plugins) | Plugin snapshot in its original folder structure. |
+| Plugins | [Browse by harness](#plugins) | last30days, Compound Engineering, and pstack. |
 
-## Cursor plugins
+## Plugins
+
+Each plugin has one snapshot, even when it works with several harnesses. The table describes support documented by the original projects, not a record of installations on every device.
+
+| Harness | Plugins | Notes |
+| --- | --- | --- |
+| Codex | [last30days](#last30days), [Compound Engineering](#compound-engineering) | Both include native Codex plugin manifests. |
+| Claude Code | [last30days](#last30days), [Compound Engineering](#compound-engineering) | Both include Claude Code plugin manifests. |
+| Cursor | [pstack](#pstack), [Compound Engineering](#compound-engineering) | Both include Cursor plugin manifests. last30days also documents a standalone Agent Skills install for Cursor. |
+| Pi | [Compound Engineering](#compound-engineering) | Includes a Pi package entry point. |
+| Grok Build CLI | [last30days](#last30days), [Compound Engineering](#compound-engineering) | Both include Grok plugin manifests. |
+
+The original READMEs cover other hosts and installation options. Get downloads and updates there. These copies are here to browse.
+
+### last30days
+
+| Browse snapshot | What it does | Original source / latest |
+| --- | --- | --- |
+| [last30days](plugins/shared/last30days/) | Research recent discussion of a topic across social platforms, GitHub, prediction markets, and the web. | [Matt Van Horn](https://github.com/mvanhorn/last30days-skill) |
+
+This is version 3.21.1 from [commit `a218edadbc3361672f5e5e2cd72a8212b0b3fbb8`](https://github.com/mvanhorn/last30days-skill/tree/a218edadbc3361672f5e5e2cd72a8212b0b3fbb8), the latest upstream default-branch commit checked on August 30, 2026. Browse the [skill](plugins/shared/last30days/skills/last30days/SKILL.md), [README](plugins/shared/last30days/README.md), or [MIT license](plugins/shared/last30days/LICENSE).
+
+The snapshot includes the skill's scripts, references, and assets, along with the plugin manifests, hooks, MCP source, documentation, and tests. It contains 457 upstream files. Only the two `.gitignore` files are omitted. No local keys, settings, or research results were copied.
+
+### Compound Engineering
+
+| Browse snapshot | What it does | Original source / latest |
+| --- | --- | --- |
+| [Compound Engineering](plugins/shared/compound-engineering/) | Guide coding work through brainstorming, planning, implementation, review, and recording lessons for later work. | [Every, Kieran Klaassen, and Trevin Chow](https://github.com/EveryInc/compound-engineering-plugin) |
+
+This is version 3.23.4 from [commit `0e758b60b35cec165470443fde5acf60db8bdae9`](https://github.com/EveryInc/compound-engineering-plugin/tree/0e758b60b35cec165470443fde5acf60db8bdae9), the latest upstream default-branch commit checked on August 30, 2026. It includes the full set of [33 skills](plugins/shared/compound-engineering/skills/), with their scripts, reviewer prompts, references, and templates. The [README](plugins/shared/compound-engineering/README.md) describes the workflows and supported harnesses.
+
+The snapshot contains 1,052 upstream files, including the plugin manifests, host adapters, documentation, tests, and [MIT license](plugins/shared/compound-engineering/LICENSE). Only `.gitignore` is omitted. Local installer records and runtime files are excluded.
+
+### pstack
 
 | Browse snapshot | What it does | Original source / latest |
 | --- | --- | --- |
@@ -72,12 +106,16 @@ Custom skills by [Carl / lev0a](https://github.com/lev0a).
 - 24 skills come from [Matt Pocock](https://github.com/mattpocock/skills). I adapted `wayfinder` to delegate research directly to child agents.
 - Six skills come from [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail).
 - Pstack comes from [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack). Only `.gitignore` is omitted.
+- last30days comes from [Matt Van Horn](https://github.com/mvanhorn/last30days-skill).
+- Compound Engineering comes from [Every](https://github.com/EveryInc/compound-engineering-plugin), with Kieran Klaassen and Trevin Chow credited as authors.
 - I made `linear-cockpit` and `setup-project-tracking`.
 
-License notices are in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE). I haven't chosen a public reuse license for my two custom skills yet.
+Standalone skills' license notices are in [LICENSES/](LICENSES/). Plugin notices remain in their own directories: [pstack](plugins/cursor/pstack/LICENSE), [last30days](plugins/shared/last30days/LICENSE), and [Compound Engineering](plugins/shared/compound-engineering/LICENSE). I haven't chosen a public reuse license for my two custom skills yet.
 
 ## Scope
 
 I keep credentials, account settings, personal session logs, and machine inventories out of this directory.
 
-The directory currently shows 32 standalone skill snapshots and one pstack plugin snapshot.
+Adding a plugin snapshot does not install it, run its hooks, or authorize its workflows. User instructions and environment permissions still apply.
+
+The directory currently shows 32 standalone skill snapshots and three plugin snapshots.

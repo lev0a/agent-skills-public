@@ -8,7 +8,7 @@ These are the agent skills and plugins I use. I keep snapshots here so you can r
 
 - [My custom skills](CATALOG.md#my-custom-skills)
 - [Skills from others](CATALOG.md#skills-from-others)
-- [Cursor plugins](CATALOG.md#cursor-plugins)
+- [Plugins by harness](CATALOG.md#plugins)
 
 ## Snapshots and original sources
 
@@ -19,12 +19,14 @@ Get the latest version and installation instructions from the original source:
 - [Matt Pocock's skills](https://github.com/mattpocock/skills)
 - [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail)
 - [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack)
+- [Matt Van Horn's last30days](https://github.com/mvanhorn/last30days-skill)
+- [Every's Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin)
 
-Shared skills live in `.agents/skills/`. Plugin snapshots live in `plugins/<harness>/`, with their original folder structure. The catalog notes any changes or omitted files.
+Shared skills live in `.agents/skills/`. Plugins for several harnesses live once in `plugins/shared/`; pstack lives in `plugins/cursor/`. Each snapshot keeps its original folder structure. The catalog notes any changes or omitted files.
 
 ## Attribution
 
-The catalog credits each creator. Their license notices are in [LICENSES/](LICENSES/) and [pstack's directory](plugins/cursor/pstack/LICENSE).
+The catalog credits each creator. Standalone skills' license notices are in [LICENSES/](LICENSES/). Each plugin snapshot includes its own `LICENSE` file.
 
 I made `linear-cockpit` and `setup-project-tracking` for my own project tracking. I haven't chosen a public reuse license for them yet.
 
