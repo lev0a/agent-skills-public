@@ -1,6 +1,6 @@
 # Skill Catalog
 
-One folder per shared skill; bundled plugins retain their complete upstream directory. Harness categories point to the same packages; they do not create copies.
+One folder per shared skill; bundled plugins retain their upstream directory structure. Harness categories point to the same packages; they do not create copies.
 
 ## By harness
 
@@ -20,9 +20,9 @@ The shared collection is the starting point; the table is not an inventory of ev
 
 | Plugin | Contents | Credit and source |
 | --- | --- | --- |
-| [pstack](plugins/cursor/pstack/) | Complete upstream plugin: skills, agents, playbooks, scripts, documentation, images, and automation pack. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
+| [pstack](plugins/cursor/pstack/) | Upstream plugin: skills, agents, playbooks, scripts, documentation, images, and automation pack. | [Lauren Tan / poteto](https://github.com/cursor/plugins/tree/main/pstack) |
 
-pstack is preserved without edits from [`cursor/plugins` commit `68836ddaf5697224520f1847d90cdb90ca8babaa`](https://github.com/cursor/plugins/tree/68836ddaf5697224520f1847d90cdb90ca8babaa/pstack), version 0.14.5. All 157 files and their Git file modes are retained, including the [MIT license](plugins/cursor/pstack/LICENSE). The snapshot contains 45 plugin skills and three additional skills in the automation pack.
+pstack comes from [`cursor/plugins` commit `68836ddaf5697224520f1847d90cdb90ca8babaa`](https://github.com/cursor/plugins/tree/68836ddaf5697224520f1847d90cdb90ca8babaa/pstack), version 0.14.5. Its `.gitignore` is excluded at the repository owner's request; all 156 remaining files and their Git file modes are unchanged, including the [MIT license](plugins/cursor/pstack/LICENSE). The snapshot contains 45 plugin skills and three additional skills in the automation pack.
 
 For installation and dependencies, use the preserved [upstream README](plugins/cursor/pstack/README.md) and [setup guide](plugins/cursor/pstack/docs/guide/01-setup.md). Cursor compatibility is the upstream target; other harnesses have not been validated. Same-name skills in this plugin remain separate from the shared collection. Keep the complete plugin together rather than merging its skills into existing folders.
 
@@ -76,7 +76,7 @@ Custom skills by [Carl / lev0a](https://github.com/lev0a), including personal tr
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills) — 24 skills; `wayfinder` includes a local adaptation for direct research delegation.
 - [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail) — six skills.
-- [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) — one complete, unchanged Cursor plugin snapshot.
+- [Lauren Tan / poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) — one Cursor plugin snapshot, with only `.gitignore` excluded.
 - [Carl / lev0a](https://github.com/lev0a) — `linear-cockpit` and `setup-project-tracking`.
 
 The shared collection's upstream license notices are in [LICENSES/](LICENSES/); pstack's notice remains in its [plugin directory](plugins/cursor/pstack/LICENSE). Include the relevant notice when copying an individual third-party skill. The license for the two custom skills is pending selection.
@@ -85,4 +85,4 @@ The shared collection's upstream license notices are in [LICENSES/](LICENSES/); 
 
 Except for the explicitly listed plugin snapshots, native/system/plugin-managed packages are not vendored. Runtime-only helpers outside those snapshots, credentials, local settings, and machine-specific inventories remain excluded. There is no requirement to import every skill found in an earlier audit.
 
-The library contains 32 shared skill packages and one complete pstack plugin snapshot.
+The library contains 32 shared skill packages and one pstack plugin snapshot.

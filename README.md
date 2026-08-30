@@ -8,12 +8,12 @@ A personal library of reusable agent skills, with one copy of each package and c
 
 ```text
 .agents/skills/<name>/    # One complete package per skill
-plugins/cursor/pstack/   # Complete, unchanged upstream plugin snapshot
+plugins/cursor/pstack/   # Upstream plugin snapshot; see catalog for exclusions
 CATALOG.md               # Harness categories, purpose, and credits
 LICENSES/                # Third-party copyright and license notices
 ```
 
-A skill shared by several harnesses stays in one folder. Selected plugins are preserved as complete upstream snapshots under their harness directory; this library does not manage their updates.
+A skill shared by several harnesses stays in one folder. Selected plugins are preserved as upstream snapshots under their harness directory, with any exclusions recorded in the catalog; this library does not manage their updates.
 
 ## Give a cloud agent the library
 
@@ -31,7 +31,7 @@ The skill format is shared, but discovery and available tools vary by harness. [
 
 - 24 packages originate from [Matt Pocock's skills](https://github.com/mattpocock/skills); retain [his MIT notice](LICENSES/mattpocock.txt).
 - Six packages originate from [DietrichGebert's Ponytail](https://github.com/DietrichGebert/ponytail); retain [its MIT notice](LICENSES/ponytail.txt).
-- The complete pstack plugin originates from [Lauren Tan / poteto in cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack); its [MIT notice](plugins/cursor/pstack/LICENSE) remains inside the unchanged snapshot.
+- The pstack plugin originates from [Lauren Tan / poteto in cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack); its [MIT notice](plugins/cursor/pstack/LICENSE) remains inside the snapshot.
 - Two packages are custom work for this collection: `linear-cockpit` and `setup-project-tracking`. No additional reuse license is granted for these custom skills yet.
 - `wayfinder` is adapted from Matt Pocock's work, not an original custom skill. See the catalog for the recorded change.
 
