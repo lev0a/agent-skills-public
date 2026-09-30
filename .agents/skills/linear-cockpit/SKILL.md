@@ -107,6 +107,8 @@ Make every issue answer:
 
 Prefer everyday language. Explain unavoidable technical terms on first use. Link to technical evidence instead of copying commands, schemas, commit lists, test matrices, raw logs, or exhaustive failure cases into Linear.
 
+When an issue is also a coding agent's work order, keep the plain sections first and put the technical brief (scope, acceptance tests, evidence) in a final `## Agent brief` section. Every description opens with 2–4 plain-English sentences a non-engineer can follow: what we're building, why it matters to Carlos, how he'll know it worked. Titles and that opening stay plain: no file paths, env vars, code identifiers, version numbers, ticket codes, or spec/question numbers.
+
 ## Status policy
 
 Use the existing Levoa statuses:
@@ -203,6 +205,10 @@ The next expected movement.
 ## Technical record
 
 Canonical GitHub issue, project file, or other authoritative link.
+
+## Agent brief
+
+Only when this issue is also a coding agent's work order: scope, acceptance tests, and evidence.
 ```
 
 Do not maintain manual issue counts in permanent descriptions when Linear can calculate them.
